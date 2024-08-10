@@ -1,0 +1,37 @@
+{
+  "stone": {
+    "name": "Stone",
+    "hardness": 100,
+    "power": 1
+  },
+  "iron_ore": {
+    "name": "Iron Ore",
+    "hardness": 250,
+    "power": 2
+  },
+  "gold_ore": {
+    "name": "Gold Ore",
+    "hardness": 200,
+    "power": 2
+  },
+  "copper_ore": {
+    "name": "Copper Ore",
+    "hardness": 300,
+    "power": 2
+  },
+  "diamond_ore": {
+    "name": "Diamond Ore",
+    "hardness": 750,
+    "power": 3
+  },
+  "ancient_debris": {
+    "name": "Ancient Debris",
+    "hardness": 1000,
+    "power": 4
+  },
+  "prismarine_block": {
+    "name": "mithril",
+    "hardness": 2000,
+    "power": 5
+  }
+}
