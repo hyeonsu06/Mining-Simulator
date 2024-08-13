@@ -1,4 +1,4 @@
-package net.nuri.miningSimulator;
+package io.github.hyeonsu06.MiningSimulator;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
@@ -7,13 +7,12 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class itemFormer {
+public class ItemFormer {
     public static Multimap<Material, ItemMeta> get(JSONObject json, String id) {
         JSONObject itemData = (JSONObject) json.get(id);
         if (itemData == null) return null;
@@ -22,20 +21,20 @@ public class itemFormer {
         ItemStack item = new ItemStack(type);
         ItemMeta meta = item.getItemMeta();
 
-        ChatColor itemRarityColor = things.rarityColor.get(Math.toIntExact((long) itemData.get("rarity") - 1));
+        ChatColor itemRarityColor = Things.rarityColor.get(Math.toIntExact((long) itemData.get("rarity") - 1));
         String itemName = itemData.get("name").toString();
         meta.setDisplayName(itemRarityColor + itemName);
 
         List<String> lore = new ArrayList<>();
 
-        if (json.equals(JSONs.materials)) {
+        if (json.equals(JSONs.materials())) {
             Double itemWorth = (Double) itemData.get("worth");
             if (!(Objects.isNull(itemWorth) || itemWorth != 0))
                 lore.add(ChatColor.GOLD + "Sell price : " + ChatColor.GREEN + itemWorth);
 
             meta.setLore(lore);
             item.setItemMeta(meta);
-        } else if (json.equals(JSONs.pickaxes)) {
+        } else if (json.equals(JSONs.pickaxes())) {
             Object JSONItemPower = itemData.get("power");
             if (Objects.nonNull(JSONItemPower)) {
                 long itemPower = (Long) JSONItemPower;
@@ -62,7 +61,7 @@ public class itemFormer {
                         lore.add(ChatColor.GOLD + "Mining Fortune : " + ChatColor.RED + itemFortune);
                 }
             }
-            String itemRarity = things.rarity.get(Math.toIntExact((Long) itemData.get("rarity") - 1));
+            String itemRarity = Things.rarity.get(Math.toIntExact((Long) itemData.get("rarity") - 1));
             lore.add(" ");
             lore.add(itemRarity);
 

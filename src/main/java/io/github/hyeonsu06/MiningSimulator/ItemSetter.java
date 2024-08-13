@@ -1,4 +1,4 @@
-package net.nuri.miningSimulator;
+package io.github.hyeonsu06.MiningSimulator;
 
 import com.google.common.collect.Multimap;
 import de.tr7zw.nbtapi.NBT;
@@ -12,7 +12,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.List;
 import java.util.Objects;
 
-public class itemSetter {
+public class ItemSetter {
     public static void set() {
         for (Player p : Bukkit.getOnlinePlayers()) {
             ItemStack[] items1 = p.getInventory().getContents();
@@ -25,8 +25,8 @@ public class itemSetter {
                         if (!defined) {
                             String id = NBT.get(i2, nbt -> (String) nbt.getString("id"));
                             if (!id.isEmpty()) {
-                                Multimap<Material, ItemMeta> value = itemFormer.get(JSONs.pickaxes, id);
-                                if (Objects.isNull(value)) value = itemFormer.get(JSONs.materials, id);
+                                Multimap<Material, ItemMeta> value = ItemFormer.get(JSONs.pickaxes(), id);
+                                if (Objects.isNull(value)) value = ItemFormer.get(JSONs.materials(), id);
                                 if (Objects.isNull(value)) {
                                     break;
                                 }

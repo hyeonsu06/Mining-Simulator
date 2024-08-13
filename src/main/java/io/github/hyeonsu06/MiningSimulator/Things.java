@@ -1,16 +1,13 @@
-package net.nuri.miningSimulator;
+package io.github.hyeonsu06.MiningSimulator;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 import java.util.List;
 
 import static java.io.File.separator;
 
-public class things {
+public class Things {
     final public static String pluginName = "MiningSimulator";
     private static final String path =
             Bukkit.getPluginManager().getPlugin(pluginName).getDataFolder().getAbsolutePath() + separator;

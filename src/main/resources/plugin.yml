@@ -1,6 +1,6 @@
 name: MiningSimulator
 version: '${project.version}'
-main: net.nuri.MiningSimulator
+main: io.github.hyeonsu06.MiningSimulator
 api-version: '1.20'
 prefix: Mining Simulator
 load: STARTUP
