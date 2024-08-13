@@ -3,48 +3,57 @@
     "name": "Wooden Pickaxe",
     "item": "wooden_pickaxe",
     "power": 1,
-    "speed": 100.0
+    "speed": 100.0,
+    "rarity": 1
   },
   "stone_pickaxe": {
     "name": "Stone Pickaxe",
     "item": "stone_pickaxe",
     "power": 2,
-    "speed": 250.0
+    "speed": 250.0,
+    "rarity": 1
   },
   "iron_pickaxe": {
     "name": "Iron Pickaxe",
     "item": "iron_pickaxe",
     "power": 3,
-    "speed": 500.0
+    "speed": 500.0,
+    "rarity": 1
   },
   "golden_pickaxe": {
     "name": "Golden Pickaxe",
     "item": "golden_pickaxe",
     "power": 1,
-    "speed": 1000.0
+    "speed": 1000.0,
+    "rarity": 1
   },
   "diamond_pickaxe": {
     "name": "Diamond Pickaxe",
     "item": "diamond_pickaxe",
     "power": 4,
-    "speed": 1500.0
+    "speed": 1500.0,
+    "rarity": 2
   },
   "netherite_pickaxe": {
     "name": "Netherite Pickaxe",
     "item": "netherite_pickaxe",
     "power": 5,
-    "speed": 2000.0
+    "speed": 2000.0,
+    "rarity": 3
   },
   "basic_drill": {
     "name": "Basic Drill",
     "item": "prismarine_shard",
     "power": 4,
-    "speed": 2500.0
+    "speed": 2500.0,
+    "rarity": 2
   },
   "advanced_drill": {
     "name": "Advanced Drill",
     "item": "prismarine_shard",
     "power": 5,
-    "speed": 3500.0
+    "speed": 3500.0,
+    "fortune": 10.0,
+    "rarity": 3
   }
 }

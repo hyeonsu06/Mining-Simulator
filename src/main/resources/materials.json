@@ -1,5 +1,14 @@
 {
   "cobblestone": {
-    "itemStack": "cobblestone"
+    "name": "Cobblestone",
+    "item": "cobblestone",
+    "rarity": 1,
+    "worth": 1.0
+  },
+  "stick": {
+    "name": "Stick",
+    "item": "stick",
+    "rarity": 1,
+    "worth": 0.5
   }
 }

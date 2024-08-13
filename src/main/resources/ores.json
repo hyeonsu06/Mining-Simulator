@@ -1,36 +1,36 @@
 {
   "stone": {
-    "name": "Stone",
+    "drop": "stone",
     "hardness": 100,
     "power": 1
   },
   "iron_ore": {
-    "name": "Iron Ore",
+    "drop": "raw_iron",
     "hardness": 250,
     "power": 2
   },
   "gold_ore": {
-    "name": "Gold Ore",
+    "drop": "raw_gold",
     "hardness": 200,
     "power": 2
   },
   "copper_ore": {
-    "name": "Copper Ore",
+    "drop": "raw_copper",
     "hardness": 300,
     "power": 2
   },
   "diamond_ore": {
-    "name": "Diamond Ore",
+    "drop": "diamond",
     "hardness": 750,
     "power": 3
   },
   "ancient_debris": {
-    "name": "Ancient Debris",
+    "drop": "ancient_debris",
     "hardness": 1000,
     "power": 4
   },
-  "prismarine_block": {
-    "name": "mithril",
+  "dark_prismarine": {
+    "drop": "mithril",
     "hardness": 2000,
     "power": 5
   }
